@@ -16,9 +16,9 @@ var dbgt = {
     }
 };
 
-dbgt.setEnvData = function (token, name){
-    if(token){
-        dbgt.token = token;
+dbgt.setEnvData = function (data, name){
+    if(data){
+        dbgt[name] = data;
         return true;
     }
     const envName = dbgt.envto[name];
